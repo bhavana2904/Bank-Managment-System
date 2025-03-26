@@ -1,11 +1,23 @@
 # Bank-Managment-System
 
-This is a simple console-based Bank Management System implemented in C. The program allows users to perform basic banking operations such as creating an account, viewing account details, depositing money, withdrawing money, and checking the account balance.
+A lightweight, terminal-based banking application written in C that simulates core financial operations with secure transaction handling.
 
-Features<br>
-Create Account: Set up a new bank account by entering account details<br>
-Account Details: View all information about the created account<br>
-Deposit Money: Add funds to the account<br>
-Withdraw Money: Remove funds from the account (with balance validation)<br>
-Check Balance: View the current account balance<br>
-Exit: Terminate the program<br>
+## ✨ Key Features
+
+| Feature          | Description                                                                 |
+|------------------|----------------------------------------------------------------------------|
+| **Account Creation** | Set up new accounts with unique IDs and customer details                   |
+| **Deposits**       | Add funds with amount validation                                           |
+| **Withdrawals**    | Remove funds with balance-checking safeguards                              |
+| **Balance Inquiry** | Instant account balance overview                                           |
+| **Account Summary** | View complete account details in clean console format                      |
+
+## 🛠️ Technical Implementation
+```c
+struct bank_account {
+    int no;
+    char name[100];
+    char branch[100];
+    int balance; 
+}; // Memory-efficient data modeling
+
